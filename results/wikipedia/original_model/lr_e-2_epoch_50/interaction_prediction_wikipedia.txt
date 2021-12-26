@@ -1,0 +1,500 @@
+
+
+*** Validation performance of epoch 0 ***
+Validation: Mean Reciprocal Rank: 0.7329960986183564
+Validation: Recall@10: 0.7778624499904744
+
+
+*** Test performance of epoch 0 ***
+Test: Mean Reciprocal Rank: 0.7381853183868645
+Test: Recall@10: 0.7882905765811532
+
+
+*** Validation performance of epoch 1 ***
+Validation: Mean Reciprocal Rank: 0.731005141953509
+Validation: Recall@10: 0.7706864799644376
+
+
+*** Test performance of epoch 1 ***
+Test: Mean Reciprocal Rank: 0.7381576800285622
+Test: Recall@10: 0.7827025654051308
+
+
+*** Validation performance of epoch 2 ***
+Validation: Mean Reciprocal Rank: 0.7286318781249336
+Validation: Recall@10: 0.7637010224169684
+
+
+*** Test performance of epoch 2 ***
+Test: Mean Reciprocal Rank: 0.7279255139123063
+Test: Recall@10: 0.773495046990094
+
+
+*** Validation performance of epoch 3 ***
+Validation: Mean Reciprocal Rank: 0.7427102473799754
+Validation: Recall@10: 0.7764653584809805
+
+
+*** Test performance of epoch 3 ***
+Test: Mean Reciprocal Rank: 0.7265827165543101
+Test: Recall@10: 0.7696215392430785
+
+
+*** Validation performance of epoch 4 ***
+Validation: Mean Reciprocal Rank: 0.7414780959169247
+Validation: Recall@10: 0.7743697212167397
+
+
+*** Test performance of epoch 4 ***
+Test: Mean Reciprocal Rank: 0.7217250814518232
+Test: Recall@10: 0.7680340360680722
+
+
+*** Validation performance of epoch 5 ***
+Validation: Mean Reciprocal Rank: 0.7419879966138452
+Validation: Recall@10: 0.775258779450054
+
+
+*** Test performance of epoch 5 ***
+Test: Mean Reciprocal Rank: 0.723423556959363
+Test: Recall@10: 0.7682245364490728
+
+
+*** Validation performance of epoch 6 ***
+Validation: Mean Reciprocal Rank: 0.740564093593741
+Validation: Recall@10: 0.7748142503333968
+
+
+*** Test performance of epoch 6 ***
+Test: Mean Reciprocal Rank: 0.7220468288859354
+Test: Recall@10: 0.7668910337820676
+
+
+*** Validation performance of epoch 7 ***
+Validation: Mean Reciprocal Rank: 0.7400114911849611
+Validation: Recall@10: 0.7737981837810377
+
+
+*** Test performance of epoch 7 ***
+Test: Mean Reciprocal Rank: 0.7210680148842383
+Test: Recall@10: 0.7679070358140716
+
+
+*** Validation performance of epoch 8 ***
+Validation: Mean Reciprocal Rank: 0.7424577001698915
+Validation: Recall@10: 0.7749412586524418
+
+
+*** Test performance of epoch 8 ***
+Test: Mean Reciprocal Rank: 0.7304024619413804
+Test: Recall@10: 0.7750825501651003
+
+
+*** Validation performance of epoch 9 ***
+Validation: Mean Reciprocal Rank: 0.745712804580378
+Validation: Recall@10: 0.7785609957452213
+
+
+*** Test performance of epoch 9 ***
+Test: Mean Reciprocal Rank: 0.7247054019531965
+Test: Recall@10: 0.7711455422910846
+
+
+*** Validation performance of epoch 10 ***
+Validation: Mean Reciprocal Rank: 0.7441872519711993
+Validation: Recall@10: 0.775830316885756
+
+
+*** Test performance of epoch 10 ***
+Test: Mean Reciprocal Rank: 0.7243430649170137
+Test: Recall@10: 0.7665735331470663
+
+
+*** Validation performance of epoch 11 ***
+Validation: Mean Reciprocal Rank: 0.7405256387879903
+Validation: Recall@10: 0.7688448593382866
+
+
+*** Test performance of epoch 11 ***
+Test: Mean Reciprocal Rank: 0.7261637762431068
+Test: Recall@10: 0.7715265430530861
+
+
+*** Validation performance of epoch 12 ***
+Validation: Mean Reciprocal Rank: 0.7443788536494133
+Validation: Recall@10: 0.776401854321458
+
+
+*** Test performance of epoch 12 ***
+Test: Mean Reciprocal Rank: 0.7262652895017583
+Test: Recall@10: 0.7694310388620778
+
+
+*** Validation performance of epoch 13 ***
+Validation: Mean Reciprocal Rank: 0.7461295123370616
+Validation: Recall@10: 0.7761478376833683
+
+
+*** Test performance of epoch 13 ***
+Test: Mean Reciprocal Rank: 0.7255684587538952
+Test: Recall@10: 0.7684785369570739
+
+
+*** Validation performance of epoch 14 ***
+Validation: Mean Reciprocal Rank: 0.7436506662763684
+Validation: Recall@10: 0.7737981837810377
+
+
+*** Test performance of epoch 14 ***
+Test: Mean Reciprocal Rank: 0.7303050964039249
+Test: Recall@10: 0.7755270510541021
+
+
+*** Validation performance of epoch 15 ***
+Validation: Mean Reciprocal Rank: 0.7423192154784302
+Validation: Recall@10: 0.7748142503333968
+
+
+*** Test performance of epoch 15 ***
+Test: Mean Reciprocal Rank: 0.7234654691860707
+Test: Recall@10: 0.7658115316230633
+
+
+*** Validation performance of epoch 16 ***
+Validation: Mean Reciprocal Rank: 0.7443362724245445
+Validation: Recall@10: 0.7784974915856988
+
+
+*** Test performance of epoch 16 ***
+Test: Mean Reciprocal Rank: 0.7330181711110328
+Test: Recall@10: 0.7726060452120904
+
+
+*** Validation performance of epoch 17 ***
+Validation: Mean Reciprocal Rank: 0.7457869339692293
+Validation: Recall@10: 0.7750047628119642
+
+
+*** Test performance of epoch 17 ***
+Test: Mean Reciprocal Rank: 0.722041761913593
+Test: Recall@10: 0.7639700279400559
+
+
+*** Validation performance of epoch 18 ***
+Validation: Mean Reciprocal Rank: 0.7460451745212113
+Validation: Recall@10: 0.7768463834381152
+
+
+*** Test performance of epoch 18 ***
+Test: Mean Reciprocal Rank: 0.7370674191154669
+Test: Recall@10: 0.7725425450850901
+
+
+*** Validation performance of epoch 19 ***
+Validation: Mean Reciprocal Rank: 0.7465734212113544
+Validation: Recall@10: 0.7771639042357275
+
+
+*** Test performance of epoch 19 ***
+Test: Mean Reciprocal Rank: 0.7244754025480513
+Test: Recall@10: 0.7661925323850648
+
+
+*** Validation performance of epoch 20 ***
+Validation: Mean Reciprocal Rank: 0.7406678362861087
+Validation: Recall@10: 0.7749412586524418
+
+
+*** Test performance of epoch 20 ***
+Test: Mean Reciprocal Rank: 0.7301215421569023
+Test: Recall@10: 0.7741935483870968
+
+
+*** Validation performance of epoch 21 ***
+Validation: Mean Reciprocal Rank: 0.7441195564507153
+Validation: Recall@10: 0.7748777544929193
+
+
+*** Test performance of epoch 21 ***
+Test: Mean Reciprocal Rank: 0.7233456234784699
+Test: Recall@10: 0.7669545339090679
+
+
+*** Validation performance of epoch 22 ***
+Validation: Mean Reciprocal Rank: 0.7472350302631687
+Validation: Recall@10: 0.7774814250333397
+
+
+*** Test performance of epoch 22 ***
+Test: Mean Reciprocal Rank: 0.7289996006661261
+Test: Recall@10: 0.773495046990094
+
+
+*** Validation performance of epoch 23 ***
+Validation: Mean Reciprocal Rank: 0.7475140356617925
+Validation: Recall@10: 0.7774814250333397
+
+
+*** Test performance of epoch 23 ***
+Test: Mean Reciprocal Rank: 0.7314124749297056
+Test: Recall@10: 0.7722250444500889
+
+
+*** Validation performance of epoch 24 ***
+Validation: Mean Reciprocal Rank: 0.7470917830973619
+Validation: Recall@10: 0.7805931288499397
+
+
+*** Test performance of epoch 24 ***
+Test: Mean Reciprocal Rank: 0.722515326633234
+Test: Recall@10: 0.7641605283210566
+
+
+*** Validation performance of epoch 25 ***
+Validation: Mean Reciprocal Rank: 0.7456265063352266
+Validation: Recall@10: 0.7737346796215152
+
+
+*** Test performance of epoch 25 ***
+Test: Mean Reciprocal Rank: 0.7247642537485421
+Test: Recall@10: 0.765748031496063
+
+
+*** Validation performance of epoch 26 ***
+Validation: Mean Reciprocal Rank: 0.7457385958631663
+Validation: Recall@10: 0.7777354416714295
+
+
+*** Test performance of epoch 26 ***
+Test: Mean Reciprocal Rank: 0.7260390832301986
+Test: Recall@10: 0.7672085344170688
+
+
+*** Validation performance of epoch 27 ***
+Validation: Mean Reciprocal Rank: 0.747070865063713
+Validation: Recall@10: 0.7765288626405029
+
+
+*** Test performance of epoch 27 ***
+Test: Mean Reciprocal Rank: 0.7259214816134253
+Test: Recall@10: 0.7661290322580645
+
+
+*** Validation performance of epoch 28 ***
+Validation: Mean Reciprocal Rank: 0.7424607024879858
+Validation: Recall@10: 0.7718295548358417
+
+
+*** Test performance of epoch 28 ***
+Test: Mean Reciprocal Rank: 0.7291777823176644
+Test: Recall@10: 0.7724790449580899
+
+
+*** Validation performance of epoch 29 ***
+Validation: Mean Reciprocal Rank: 0.7496091321868383
+Validation: Recall@10: 0.778243474947609
+
+
+*** Test performance of epoch 29 ***
+Test: Mean Reciprocal Rank: 0.7277918904898625
+Test: Recall@10: 0.7653670307340614
+
+
+*** Validation performance of epoch 30 ***
+Validation: Mean Reciprocal Rank: 0.7459320832039316
+Validation: Recall@10: 0.7769098875976377
+
+
+*** Test performance of epoch 30 ***
+Test: Mean Reciprocal Rank: 0.7325757763142318
+Test: Recall@10: 0.7689865379730759
+
+
+*** Validation performance of epoch 31 ***
+Validation: Mean Reciprocal Rank: 0.7457595710701204
+Validation: Recall@10: 0.7776084333523846
+
+
+*** Test performance of epoch 31 ***
+Test: Mean Reciprocal Rank: 0.7301636303804591
+Test: Recall@10: 0.7664465328930657
+
+
+*** Validation performance of epoch 32 ***
+Validation: Mean Reciprocal Rank: 0.7467003383194851
+Validation: Recall@10: 0.777671937511907
+
+
+*** Test performance of epoch 32 ***
+Test: Mean Reciprocal Rank: 0.7292912105182737
+Test: Recall@10: 0.7667640335280671
+
+
+*** Validation performance of epoch 33 ***
+Validation: Mean Reciprocal Rank: 0.747547382678904
+Validation: Recall@10: 0.7781799707880867
+
+
+*** Test performance of epoch 33 ***
+Test: Mean Reciprocal Rank: 0.7301156584478232
+Test: Recall@10: 0.7693675387350775
+
+
+*** Validation performance of epoch 34 ***
+Validation: Mean Reciprocal Rank: 0.7513192711305179
+Validation: Recall@10: 0.7802756080523274
+
+
+*** Test performance of epoch 34 ***
+Test: Mean Reciprocal Rank: 0.7289577271846669
+Test: Recall@10: 0.7672720345440691
+
+
+*** Validation performance of epoch 35 ***
+Validation: Mean Reciprocal Rank: 0.748573291413875
+Validation: Recall@10: 0.7800215914142377
+
+
+*** Test performance of epoch 35 ***
+Test: Mean Reciprocal Rank: 0.7305688651225002
+Test: Recall@10: 0.7670815341630683
+
+
+*** Validation performance of epoch 36 ***
+Validation: Mean Reciprocal Rank: 0.7531654058788614
+Validation: Recall@10: 0.7816726995618213
+
+
+*** Test performance of epoch 36 ***
+Test: Mean Reciprocal Rank: 0.7250531180342089
+Test: Recall@10: 0.7655575311150622
+
+
+*** Validation performance of epoch 37 ***
+Validation: Mean Reciprocal Rank: 0.7501227938921373
+Validation: Recall@10: 0.7786880040642662
+
+
+*** Test performance of epoch 37 ***
+Test: Mean Reciprocal Rank: 0.7299722326970502
+Test: Recall@10: 0.7672720345440691
+
+
+*** Validation performance of epoch 38 ***
+Validation: Mean Reciprocal Rank: 0.7526667794203655
+Validation: Recall@10: 0.7802121038928049
+
+
+*** Test performance of epoch 38 ***
+Test: Mean Reciprocal Rank: 0.732351542620947
+Test: Recall@10: 0.7704470408940818
+
+
+*** Validation performance of epoch 39 ***
+Validation: Mean Reciprocal Rank: 0.75270646560242
+Validation: Recall@10: 0.7801485997332825
+
+
+*** Test performance of epoch 39 ***
+Test: Mean Reciprocal Rank: 0.7283811507834573
+Test: Recall@10: 0.7668910337820676
+
+
+*** Validation performance of epoch 40 ***
+Validation: Mean Reciprocal Rank: 0.746361039963866
+Validation: Recall@10: 0.777100400076205
+
+
+*** Test performance of epoch 40 ***
+Test: Mean Reciprocal Rank: 0.7308841633692995
+Test: Recall@10: 0.7731140462280924
+
+
+*** Validation performance of epoch 41 ***
+Validation: Mean Reciprocal Rank: 0.7462428718087788
+Validation: Recall@10: 0.7769098875976377
+
+
+*** Test performance of epoch 41 ***
+Test: Mean Reciprocal Rank: 0.7300444960155983
+Test: Recall@10: 0.7667640335280671
+
+
+*** Validation performance of epoch 42 ***
+Validation: Mean Reciprocal Rank: 0.7482337757713844
+Validation: Recall@10: 0.7761478376833683
+
+
+*** Test performance of epoch 42 ***
+Test: Mean Reciprocal Rank: 0.7312139478055566
+Test: Recall@10: 0.7685420370840742
+
+
+*** Validation performance of epoch 43 ***
+Validation: Mean Reciprocal Rank: 0.75004604353314
+Validation: Recall@10: 0.7776084333523846
+
+
+*** Test performance of epoch 43 ***
+Test: Mean Reciprocal Rank: 0.7303427623227755
+Test: Recall@10: 0.7688595377190754
+
+
+*** Validation performance of epoch 44 ***
+Validation: Mean Reciprocal Rank: 0.7497939514667669
+Validation: Recall@10: 0.7777989458309519
+
+
+*** Test performance of epoch 44 ***
+Test: Mean Reciprocal Rank: 0.7327975557178499
+Test: Recall@10: 0.7719710439420879
+
+
+*** Validation performance of epoch 45 ***
+Validation: Mean Reciprocal Rank: 0.7487028929418024
+Validation: Recall@10: 0.7767828792785928
+
+
+*** Test performance of epoch 45 ***
+Test: Mean Reciprocal Rank: 0.731947245699955
+Test: Recall@10: 0.7717170434340869
+
+
+*** Validation performance of epoch 46 ***
+Validation: Mean Reciprocal Rank: 0.7485392005409135
+Validation: Recall@10: 0.7801485997332825
+
+
+*** Test performance of epoch 46 ***
+Test: Mean Reciprocal Rank: 0.7285317740192151
+Test: Recall@10: 0.7667640335280671
+
+
+*** Validation performance of epoch 47 ***
+Validation: Mean Reciprocal Rank: 0.7461610602533716
+Validation: Recall@10: 0.7755127960881437
+
+
+*** Test performance of epoch 47 ***
+Test: Mean Reciprocal Rank: 0.7316026726347228
+Test: Recall@10: 0.7668275336550673
+
+
+*** Validation performance of epoch 48 ***
+Validation: Mean Reciprocal Rank: 0.7471706817069613
+Validation: Recall@10: 0.7774814250333397
+
+
+*** Test performance of epoch 48 ***
+Test: Mean Reciprocal Rank: 0.7323654028128188
+Test: Recall@10: 0.7706375412750825
+
+
+*** Validation performance of epoch 49 ***
+Validation: Mean Reciprocal Rank: 0.7492428264945513
+Validation: Recall@10: 0.7788785165428336
+
+
+*** Test performance of epoch 49 ***
+Test: Mean Reciprocal Rank: 0.7340226142683204
+Test: Recall@10: 0.7695580391160782

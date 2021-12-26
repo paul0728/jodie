@@ -59,15 +59,24 @@ class JODIE(nn.Module):
         self.initial_item_embedding = nn.Parameter(torch.Tensor(args.embedding_dim))
 
         rnn_input_size_items = rnn_input_size_users = self.embedding_dim + 1 + num_features
-
+        #gru_input_size_items = gru_input_size_users = self.embedding_dim + 1 + num_features
         print("Initializing user and item RNNs")
+        
         self.item_rnn = nn.RNNCell(rnn_input_size_users, self.embedding_dim)
         self.user_rnn = nn.RNNCell(rnn_input_size_items, self.embedding_dim)
-
+        #self.item_gru = nn.GRUCell(gru_input_size_users, self.embedding_dim)
+        #self.user_gru = nn.GRUCell(gru_input_size_items, self.embedding_dim)
         print("Initializing linear layers")
+        #self.conv_layer1 = torch.nn.Conv2d(in_channels=self.embedding_dim,  out_channels=50,kernel_size=(1, 1))
+        #self.conv_layer2 = torch.nn.Conv2d(in_channels=50,out_channels=2,kernel_size=(1, 1))
+        #self.prediction_layer  = torch.nn.Conv2d(in_channels=self.user_static_embedding_size + self.item_static_embedding_size + self.embedding_dim * 2, out_channels=self.item_static_embedding_size + self.embedding_dim,kernel_size=(1, 1))
         self.linear_layer1 = nn.Linear(self.embedding_dim, 50)
         self.linear_layer2 = nn.Linear(50, 2)
         self.prediction_layer = nn.Linear(self.user_static_embedding_size + self.item_static_embedding_size + self.embedding_dim * 2, self.item_static_embedding_size + self.embedding_dim)
+        
+        
+        
+        
         self.embedding_layer = NormalLinear(1, self.embedding_dim)
         print("*** JODIE initialization complete ***\n\n")
         
@@ -94,11 +103,20 @@ class JODIE(nn.Module):
     def predict_label(self, user_embeddings):
         X_out = nn.ReLU()(self.linear_layer1(user_embeddings))
         X_out = self.linear_layer2(X_out)
+        #X_out = nn.ReLU()(self.conv_layer1(user_embeddings.view(-1,self.embedding_dim,1,1)))
+        #X_out = self.conv_layer2(X_out)
+        #print('predict_label=',X_out.shape)
         return X_out
+        #return X_out.view(-1,2)
+    
 
     def predict_item_embedding(self, user_embeddings):
         X_out = self.prediction_layer(user_embeddings)
+        #print(user_embeddings.shape)
+        #X_out = self.prediction_layer(user_embeddings.view(-1,self.user_static_embedding_size + self.item_static_embedding_size + self.embedding_dim * 2,1,1))
+        #print('predict_item_embedding=',X_out.shape)
         return X_out
+        #return X_out.view(-1,1129)
 
 
 # INITIALIZE T-BATCH VARIABLES
@@ -154,8 +172,8 @@ def save_model(model, optimizer, args, epoch, user_embeddings, item_embeddings, 
     if user_embeddings_time_series is not None:
         state['user_embeddings_time_series'] = user_embeddings_time_series.data.cpu().numpy()
         state['item_embeddings_time_series'] = item_embeddings_time_series.data.cpu().numpy()
-
-    directory = os.path.join(path, 'saved_models/%s' % args.network)
+        
+    directory = os.path.join(path, 'saved_models/lastfm')
     if not os.path.exists(directory):
         os.makedirs(directory)
 
@@ -167,7 +185,7 @@ def save_model(model, optimizer, args, epoch, user_embeddings, item_embeddings, 
 # LOAD PREVIOUSLY TRAINED AND SAVED MODEL
 def load_model(model, optimizer, args, epoch):
     modelname = args.model
-    filename = PATH + "saved_models/%s/checkpoint.%s.ep%d.tp%.1f.pth.tar" % (args.network, modelname, epoch, args.train_proportion)
+    filename = PATH + "saved_models/lastfm/checkpoint.%s.ep%d.tp%.1f.pth.tar" % (modelname, epoch, args.train_proportion)
     checkpoint = torch.load(filename)
     print("Loading saved embeddings and model: %s" % filename)
     args.start_epoch = checkpoint['epoch']
@@ -217,6 +235,7 @@ def set_embeddings_training_end(user_embeddings, item_embeddings, user_embedding
 def select_free_gpu():
     mem = []
     gpus = list(set(range(torch.cuda.device_count()))) # list(set(X)) is done to shuffle the array
+    #print("gpus=",gpus)
     for i in gpus:
         gpu_stats = gpustat.GPUStatCollection.new_query()
         mem.append(gpu_stats.jsonify()["gpus"][i]["memory.used"])

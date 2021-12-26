@@ -37,7 +37,7 @@ os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
 
 # CHECK IF THE OUTPUT OF THE EPOCH IS ALREADY PROCESSED. IF SO, MOVE ON.
-output_fname = "results/state_change_prediction_%s.txt" % args.network
+output_fname = "results/original/state_change_prediction_%s.txt" % args.network
 if os.path.exists(output_fname):
     f = open(output_fname, "r")
     search_string = 'Test performance of epoch %d' % args.epoch
@@ -75,6 +75,7 @@ At the end of each timespan, the model is updated as well. So, longer timespan m
 '''
 timespan = timestamp_sequence[-1] - timestamp_sequence[0]
 tbatch_timespan = timespan / 500 
+#tbatch_timespan = timespan / 100
 
 # INITIALIZE MODEL PARAMETERS
 model = JODIE(args, num_features, num_users, num_items).cuda()
@@ -123,6 +124,7 @@ Please note that since each interaction in validation and test is only seen once
 '''
 tbatch_start_time = None
 loss = 0
+total_loss=0
 # FORWARD PASS
 print("*** Making state change predictions by forward pass (no t-batching) ***")
 with trange(train_end_idx, test_end_idx) as progress_bar:
@@ -177,6 +179,9 @@ with trange(train_end_idx, test_end_idx) as progress_bar:
         # CALCULATE STATE CHANGE LOSS
         if args.state_change:
             loss += calculate_state_prediction_loss(model, [j], user_embeddings_timeseries, y_true, crossEntropyLoss) 
+            
+        
+        
 
         # UPDATE THE MODEL IN REAL-TIME USING ERRORS MADE IN THE PAST PREDICTION
         if timestamp - tbatch_start_time > tbatch_timespan:
@@ -203,6 +208,11 @@ with trange(train_end_idx, test_end_idx) as progress_bar:
             test_predicted_y.extend(prob.data.cpu().numpy())
             test_true_y.extend([y_true[j]])
 
+
+
+
+    
+
 # CALCULATE THE PERFORMANCE METRICS
 validation_predicted_y = np.array(validation_predicted_y)
 test_predicted_y = np.array(test_predicted_y)
@@ -221,13 +231,13 @@ metrics = ['AUC']
 print('\n\n*** Validation performance of epoch %d ***' % args.epoch)
 fw.write('\n\n*** Validation performance of epoch %d ***\n' % args.epoch)
 
-for i in xrange(len(metrics)):
+for i in range(len(metrics)):
     print(metrics[i] + ': ' + str(performance_dict['validation'][i]))
     fw.write("Validation: " + metrics[i] + ': ' + str(performance_dict['validation'][i]) + "\n")
 
 print('\n\n*** Test performance of epoch %d ***' % args.epoch)
 fw.write('\n\n*** Test performance of epoch %d ***\n' % args.epoch)
-for i in xrange(len(metrics)):
+for i in range(len(metrics)):
     print(metrics[i] + ': ' + str(performance_dict['test'][i]))
     fw.write("Test: " + metrics[i] + ': ' + str(performance_dict['test'][i]) + "\n")
 

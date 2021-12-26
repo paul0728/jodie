@@ -9,7 +9,6 @@ Paper: Predicting Dynamic Embedding Trajectory in Temporal Interaction Networks.
 '''
 
 import time
-
 from library_data import *
 import library_models as lib
 from library_models import *
@@ -20,6 +19,7 @@ parser.add_argument('--network', required=True, help='Name of the network/datase
 parser.add_argument('--model', default="jodie", help='Model name to save output in file')
 parser.add_argument('--gpu', default=-1, type=int, help='ID of the gpu to run on. If set to -1 (default), the GPU with most free memory will be chosen.')
 parser.add_argument('--epochs', default=50, type=int, help='Number of epochs to train the model')
+parser.add_argument('--start_epoch', default=0, type=int, help='Which epoch to start')
 parser.add_argument('--embedding_dim', default=128, type=int, help='Number of dimensions of the dynamic embedding')
 parser.add_argument('--train_proportion', default=0.8, type=float, help='Fraction of interactions (from the beginning) that are used for training.The next 10% are used for validation and the next 10% for testing')
 parser.add_argument('--state_change', default=True, type=bool, help='True if training with state change of users along with interaction prediction. False otherwise. By default, set to True.')
@@ -68,20 +68,47 @@ weight = torch.Tensor([1,true_labels_ratio]).cuda()
 crossEntropyLoss = nn.CrossEntropyLoss(weight=weight)
 MSELoss = nn.MSELoss()
 
-# INITIALIZE EMBEDDING
-initial_user_embedding = nn.Parameter(F.normalize(torch.rand(args.embedding_dim).cuda(), dim=0)) # the initial user and item embeddings are learned during training as well
-initial_item_embedding = nn.Parameter(F.normalize(torch.rand(args.embedding_dim).cuda(), dim=0))
-model.initial_user_embedding = initial_user_embedding
-model.initial_item_embedding = initial_item_embedding
-
-user_embeddings = initial_user_embedding.repeat(num_users, 1) # initialize all users to the same embedding 
-item_embeddings = initial_item_embedding.repeat(num_items, 1) # initialize all items to the same embedding
-item_embedding_static = Variable(torch.eye(num_items).cuda()) # one-hot vectors for static embeddings
-user_embedding_static = Variable(torch.eye(num_users).cuda()) # one-hot vectors for static embeddings 
 
 # INITIALIZE MODEL
 learning_rate = 1e-3
 optimizer = optim.Adam(model.parameters(), lr=learning_rate, weight_decay=1e-5)
+
+
+if args.start_epoch>0:
+    # LOAD THE MODEL
+    model, optimizer, user_embeddings_dystat, item_embeddings_dystat, user_embeddings_timeseries, item_embeddings_timeseries, train_end_idx_training = load_model(model, optimizer, args, args.start_epoch-1)
+    
+    # SET THE USER AND ITEM EMBEDDINGS TO THEIR STATE AT THE END OF THE TRAINING PERIOD
+    set_embeddings_training_end(user_embeddings_dystat, item_embeddings_dystat, user_embeddings_timeseries, item_embeddings_timeseries, user_sequence_id, item_sequence_id, train_end_idx) 
+    
+    # LOAD THE EMBEDDINGS: DYNAMIC AND STATIC
+    item_embeddings = item_embeddings_dystat[:, :args.embedding_dim]
+    item_embeddings = item_embeddings.clone()
+    item_embeddings_static = item_embeddings_dystat[:, args.embedding_dim:]
+    item_embeddings_static = item_embeddings_static.clone()
+    
+    user_embeddings = user_embeddings_dystat[:, :args.embedding_dim]
+    user_embeddings = user_embeddings.clone()
+    user_embeddings_static = user_embeddings_dystat[:, args.embedding_dim:]
+    user_embeddings_static = user_embeddings_static.clone()
+
+
+
+
+
+else:
+    # INITIALIZE EMBEDDING
+    initial_user_embedding = nn.Parameter(F.normalize(torch.rand(args.embedding_dim).cuda(), dim=0)) # the initial user and item embeddings are learned during training as well
+    initial_item_embedding = nn.Parameter(F.normalize(torch.rand(args.embedding_dim).cuda(), dim=0))
+    model.initial_user_embedding = initial_user_embedding
+    model.initial_item_embedding = initial_item_embedding
+    
+    user_embeddings = initial_user_embedding.repeat(num_users, 1) # initialize all users to the same embedding 
+    item_embeddings = initial_item_embedding.repeat(num_items, 1) # initialize all items to the same embedding
+    item_embedding_static = Variable(torch.eye(num_items).cuda()) # one-hot vectors for static embeddings
+    user_embedding_static = Variable(torch.eye(num_users).cuda()) # one-hot vectors for static embeddings 
+
+
 
 # RUN THE JODIE MODEL
 '''
@@ -99,7 +126,8 @@ cached_tbatches_user_timediffs = {}
 cached_tbatches_item_timediffs = {}
 cached_tbatches_previous_item = {}
 
-with trange(args.epochs) as progress_bar1:
+with trange(args.start_epoch,args.epochs) as progress_bar1:
+
     for ep in progress_bar1:
         progress_bar1.set_description('Epoch %d of %d' % (ep, args.epochs))
 
@@ -247,6 +275,7 @@ with trange(args.epochs) as progress_bar1:
         print("Last epoch took {} minutes".format((time.time()-epoch_start_time)/60))
         # END OF ONE EPOCH 
         print("\n\nTotal loss in this epoch = %f" % (total_loss))
+            
         item_embeddings_dystat = torch.cat([item_embeddings, item_embedding_static], dim=1)
         user_embeddings_dystat = torch.cat([user_embeddings, user_embedding_static], dim=1)
         # SAVE CURRENT MODEL TO DISK TO BE USED IN EVALUATION.

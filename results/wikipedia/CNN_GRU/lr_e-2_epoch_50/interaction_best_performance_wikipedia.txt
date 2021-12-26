@@ -1,0 +1,11 @@
+Best validation epoch: 34
+
+
+*** Best validation performance (epoch 34) ***
+Mean Reciprocal Rank: 0.7751551528435249
+Recall@10: 0.804280180351813
+
+
+*** Final model performance on the test set, i.e., in epoch 34 ***
+Mean Reciprocal Rank: 0.7489009448829379
+Recall@10: 0.7815595631191262

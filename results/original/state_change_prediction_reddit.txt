@@ -1,0 +1,400 @@
+
+
+*** Validation performance of epoch 0 ***
+Validation: AUC: 0.5120583550567466
+
+
+*** Test performance of epoch 0 ***
+Test: AUC: 0.5236854368892176
+
+
+*** Validation performance of epoch 1 ***
+Validation: AUC: 0.5375440342414114
+
+
+*** Test performance of epoch 1 ***
+Test: AUC: 0.5604790386892373
+
+
+*** Validation performance of epoch 2 ***
+Validation: AUC: 0.5552727693039197
+
+
+*** Test performance of epoch 2 ***
+Test: AUC: 0.5894110262504599
+
+
+*** Validation performance of epoch 3 ***
+Validation: AUC: 0.5573717019743277
+
+
+*** Test performance of epoch 3 ***
+Test: AUC: 0.6155333056528279
+
+
+*** Validation performance of epoch 4 ***
+Validation: AUC: 0.5649154253600454
+
+
+*** Test performance of epoch 4 ***
+Test: AUC: 0.625541271068962
+
+
+*** Validation performance of epoch 5 ***
+Validation: AUC: 0.5580542710258851
+
+
+*** Test performance of epoch 5 ***
+Test: AUC: 0.6255798920460289
+
+
+*** Validation performance of epoch 6 ***
+Validation: AUC: 0.5551188738442516
+
+
+*** Test performance of epoch 6 ***
+Test: AUC: 0.6277013512979472
+
+
+*** Validation performance of epoch 7 ***
+Validation: AUC: 0.5602863024722222
+
+
+*** Test performance of epoch 7 ***
+Test: AUC: 0.6261584368486719
+
+
+*** Validation performance of epoch 8 ***
+Validation: AUC: 0.5612640749766421
+
+
+*** Test performance of epoch 8 ***
+Test: AUC: 0.6158267480932015
+
+
+*** Validation performance of epoch 9 ***
+Validation: AUC: 0.5686694456873806
+
+
+*** Test performance of epoch 9 ***
+Test: AUC: 0.6073663162465235
+
+
+*** Validation performance of epoch 10 ***
+Validation: AUC: 0.5648935341140043
+
+
+*** Test performance of epoch 10 ***
+Test: AUC: 0.5916429594600351
+
+
+*** Validation performance of epoch 11 ***
+Validation: AUC: 0.5778229418507209
+
+
+*** Test performance of epoch 11 ***
+Test: AUC: 0.5806373923937461
+
+
+*** Validation performance of epoch 12 ***
+Validation: AUC: 0.5689627883843297
+
+
+*** Test performance of epoch 12 ***
+Test: AUC: 0.5744309628863958
+
+
+*** Validation performance of epoch 13 ***
+Validation: AUC: 0.5723788078727926
+
+
+*** Test performance of epoch 13 ***
+Test: AUC: 0.600939067132753
+
+
+*** Validation performance of epoch 14 ***
+Validation: AUC: 0.5957671962305026
+
+
+*** Test performance of epoch 14 ***
+Test: AUC: 0.5765683324411588
+
+
+*** Validation performance of epoch 15 ***
+Validation: AUC: 0.5641273405025704
+
+
+*** Test performance of epoch 15 ***
+Test: AUC: 0.5622019705166691
+
+
+*** Validation performance of epoch 16 ***
+Validation: AUC: 0.5578875691872831
+
+
+*** Test performance of epoch 16 ***
+Test: AUC: 0.5579780417291318
+
+
+*** Validation performance of epoch 17 ***
+Validation: AUC: 0.5664443099835466
+
+
+*** Test performance of epoch 17 ***
+Test: AUC: 0.5402188077229637
+
+
+*** Validation performance of epoch 18 ***
+Validation: AUC: 0.5618800946402349
+
+
+*** Test performance of epoch 18 ***
+Test: AUC: 0.5520497859037796
+
+
+*** Validation performance of epoch 19 ***
+Validation: AUC: 0.5607037685342234
+
+
+*** Test performance of epoch 19 ***
+Test: AUC: 0.571147923217905
+
+
+*** Validation performance of epoch 20 ***
+Validation: AUC: 0.5575113681240691
+
+
+*** Test performance of epoch 20 ***
+Test: AUC: 0.546739337402607
+
+
+*** Validation performance of epoch 21 ***
+Validation: AUC: 0.5545746574676731
+
+
+*** Test performance of epoch 21 ***
+Test: AUC: 0.5296044544742081
+
+
+*** Validation performance of epoch 22 ***
+Validation: AUC: 0.5599331966735814
+
+
+*** Test performance of epoch 22 ***
+Test: AUC: 0.5347786389300475
+
+
+*** Validation performance of epoch 23 ***
+Validation: AUC: 0.5515113059529303
+
+
+*** Test performance of epoch 23 ***
+Test: AUC: 0.5355751805434447
+
+
+*** Validation performance of epoch 24 ***
+Validation: AUC: 0.5547330406327796
+
+
+*** Test performance of epoch 24 ***
+Test: AUC: 0.5357101614998385
+
+
+*** Validation performance of epoch 25 ***
+Validation: AUC: 0.5574616749955561
+
+
+*** Test performance of epoch 25 ***
+Test: AUC: 0.5226182918185631
+
+
+*** Validation performance of epoch 26 ***
+Validation: AUC: 0.5451071313798752
+
+
+*** Test performance of epoch 26 ***
+Test: AUC: 0.5683854327320095
+
+
+*** Validation performance of epoch 27 ***
+Validation: AUC: 0.5516889534145528
+
+
+*** Test performance of epoch 27 ***
+Test: AUC: 0.5292575072250738
+
+
+*** Validation performance of epoch 28 ***
+Validation: AUC: 0.5474956852354054
+
+
+*** Test performance of epoch 28 ***
+Test: AUC: 0.5348148220381304
+
+
+*** Validation performance of epoch 29 ***
+Validation: AUC: 0.5493631179789301
+
+
+*** Test performance of epoch 29 ***
+Test: AUC: 0.5335722787095
+
+
+*** Validation performance of epoch 30 ***
+Validation: AUC: 0.5450318254934943
+
+
+*** Test performance of epoch 30 ***
+Test: AUC: 0.5511290412810771
+
+
+*** Validation performance of epoch 31 ***
+Validation: AUC: 0.5455085073760365
+
+
+*** Test performance of epoch 31 ***
+Test: AUC: 0.5177564112105021
+
+
+*** Validation performance of epoch 32 ***
+Validation: AUC: 0.5303183906606691
+
+
+*** Test performance of epoch 32 ***
+Test: AUC: 0.5271506751870616
+
+
+*** Validation performance of epoch 33 ***
+Validation: AUC: 0.5432419972171849
+
+
+*** Test performance of epoch 33 ***
+Test: AUC: 0.5418315222105261
+
+
+*** Validation performance of epoch 34 ***
+Validation: AUC: 0.5297620246425379
+
+
+*** Test performance of epoch 34 ***
+Test: AUC: 0.5342751548303423
+
+
+*** Validation performance of epoch 35 ***
+Validation: AUC: 0.5264704568878178
+
+
+*** Test performance of epoch 35 ***
+Test: AUC: 0.5292567373717104
+
+
+*** Validation performance of epoch 36 ***
+Validation: AUC: 0.5298044936598573
+
+
+*** Test performance of epoch 36 ***
+Test: AUC: 0.5297321218236491
+
+
+*** Validation performance of epoch 37 ***
+Validation: AUC: 0.5276716295580859
+
+
+*** Test performance of epoch 37 ***
+Test: AUC: 0.5357219659180783
+
+
+*** Validation performance of epoch 38 ***
+Validation: AUC: 0.5316534283004775
+
+
+*** Test performance of epoch 38 ***
+Test: AUC: 0.5364212493898912
+
+
+*** Validation performance of epoch 39 ***
+Validation: AUC: 0.5418584704673957
+
+
+*** Test performance of epoch 39 ***
+Test: AUC: 0.5384677762477655
+
+
+*** Validation performance of epoch 40 ***
+Validation: AUC: 0.5322937472471758
+
+
+*** Test performance of epoch 40 ***
+Test: AUC: 0.5480353855399982
+
+
+*** Validation performance of epoch 41 ***
+Validation: AUC: 0.5318490265838536
+
+
+*** Test performance of epoch 41 ***
+Test: AUC: 0.5201475757574203
+
+
+*** Validation performance of epoch 42 ***
+Validation: AUC: 0.5367757609616036
+
+
+*** Test performance of epoch 42 ***
+Test: AUC: 0.5306410620281119
+
+
+*** Validation performance of epoch 43 ***
+Validation: AUC: 0.5378928712470743
+
+
+*** Test performance of epoch 43 ***
+Test: AUC: 0.5351121137453212
+
+
+*** Validation performance of epoch 44 ***
+Validation: AUC: 0.542068188604468
+
+
+*** Test performance of epoch 44 ***
+Test: AUC: 0.520969009296236
+
+
+*** Validation performance of epoch 45 ***
+Validation: AUC: 0.535231114640953
+
+
+*** Test performance of epoch 45 ***
+Test: AUC: 0.5249109151349579
+
+
+*** Validation performance of epoch 46 ***
+Validation: AUC: 0.5347595772012306
+
+
+*** Test performance of epoch 46 ***
+Test: AUC: 0.5327041407333007
+
+
+*** Validation performance of epoch 47 ***
+Validation: AUC: 0.5522741064212278
+
+
+*** Test performance of epoch 47 ***
+Test: AUC: 0.5305303314526671
+
+
+*** Validation performance of epoch 48 ***
+Validation: AUC: 0.5330061978495791
+
+
+*** Test performance of epoch 48 ***
+Test: AUC: 0.5298425957813062
+
+
+*** Validation performance of epoch 49 ***
+Validation: AUC: 0.5424924409527421
+
+
+*** Test performance of epoch 49 ***
+Test: AUC: 0.5163284615301709

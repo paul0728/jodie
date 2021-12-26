@@ -1,0 +1,9 @@
+Best validation epoch: 10
+
+
+*** Best validation performance (epoch 10) ***
+AUC: 0.7850997096657978
+
+
+*** Final model performance on the test set, i.e., in epoch 10 ***
+AUC: 0.7950969164864062
